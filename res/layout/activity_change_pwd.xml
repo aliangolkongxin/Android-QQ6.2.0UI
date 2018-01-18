@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/changePwTop"
+        style="@style/title_relayout" >
+
+        <LinearLayout
+            android:id="@+id/lin_back_changpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical" 
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"/>
+</LinearLayout>
+
+        <TextView
+            android:id="@+id/changePwTitle"
+            style="@style/title_text"
+            android:text="@string/changepw" />
+    </RelativeLayout>
+
+    <com.hz.oo.view.CircleImageView
+        android:id="@+id/changePwUser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/changePwTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/login"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/changePwli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changePwUser"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/changePwId_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/changePwId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/id"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/changePwIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:text="@string/idh"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/changePwline"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/changePw_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/changePw"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/oldpasswors"
+                android:inputType="textPassword"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/changePwText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:visibility="invisible"
+                android:text="@string/wrongpw"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/registerline1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/changePwAuth_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/changePwNew"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/newpassword"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/changePwNewText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/id_true"
+                android:visibility="invisible"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/changePwBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/changePwli"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector"
+        android:includeFontPadding="false"
+        android:text="@string/true_change"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

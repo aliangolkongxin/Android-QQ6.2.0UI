@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/findPasswordTop"
+        style="@style/title_relayout" >
+
+        <LinearLayout
+            android:id="@+id/lin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            >
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical" 
+            android:background="@drawable/back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textColor="@color/blue"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp"/>
+</LinearLayout>
+        <TextView
+            android:id="@+id/findPasswordTitle"
+            style="@style/title_text"
+            android:text="@string/findpassword" />
+    </RelativeLayout>
+
+    <com.hz.oo.view.CircleImageView
+        android:id="@+id/findPasswordUser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/findPasswordTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/login"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/findPasswordli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/findPasswordUser"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/findPasswId_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/findPasswId"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/id"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/findPasswIdText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/idh"
+                android:textColor="#ff0000"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/findPasswordline"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/findPasswAuth_tx_li"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/findPasswAuth"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:background="@null"
+                android:hint="@string/auth_code"
+                android:textColorHint="#CDCDC1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/findPasswAuthText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/autetrue"
+                android:textColor="#ff0000"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/findPasswordCodeli"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/findPasswordli"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/findPasswordimg"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:contentDescription="@string/register" />
+
+        <Button
+            android:id="@+id/findPasswordCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:text="@string/check"
+            android:textColor="#00AFEF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/findPasswordBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/findPasswordCodeli"
+        android:layout_margin="20dp"
+        android:background="@drawable/selector"
+        android:includeFontPadding="false"
+        android:text="@string/isture"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

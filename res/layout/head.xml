@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dp"
+    android:background="@color/white" >
+
+    <com.hz.oo.view.CircleImageView
+        android:id="@+id/img_click"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/app_logo" />
+
+    <TextView
+        android:id="@+id/txt_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+    <LinearLayout
+        android:id="@+id/lin_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/txt_head_msg"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:text="消息" 
+            android:textColor="@color/white"
+            android:background="@drawable/left_shape1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_head_call"
+            android:layout_width="60dp"
+            android:layout_height="28dp"
+            android:text="电话"
+            android:layout_marginLeft="-0.5dp"
+            android:textColor="@color/tab_select_color" 
+            android:background="@drawable/right_shape2"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:text="" 
+        android:textColor="@color/tab_select_color"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/img_head_right"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ic_add"
+        android:visibility="gone"/>
+</RelativeLayout>

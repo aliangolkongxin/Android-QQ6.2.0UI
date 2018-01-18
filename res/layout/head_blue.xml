@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="35dp" 
+    android:background="@color/transparent">
+    
+<LinearLayout
+    android:id="@+id/lin_left_blue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="8dp"
+    >
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back"
+        android:layout_gravity="center_vertical"
+        />
+    <TextView
+        android:id="@+id/txt_head_left_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="18sp"
+        android:textColor="@color/tab_select_color"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        />
+</LinearLayout>
+
+<TextView
+    android:id="@+id/txt_head_title_blue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textColor="@color/tab_select_color"
+    android:textSize="20sp"
+    android:layout_centerInParent="true"
+    />
+
+<TextView
+    android:id="@+id/txt_head_right_blue"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:textColor="@color/tab_select_color"
+    android:textSize="18sp"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="8dp"
+    android:layout_centerVertical="true"
+    />
+</RelativeLayout>

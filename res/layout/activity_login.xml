@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFBFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true" >
+
+    <RelativeLayout
+        android:id="@+id/loginTop"
+        style="@style/title_relayout" >
+
+        <TextView
+            android:id="@+id/loginTitle"
+            style="@style/title_text"
+            android:text="@string/login" />
+    </RelativeLayout>
+
+    <com.hz.oo.view.CircleImageView
+        android:id="@+id/loginUser"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/loginTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/login"
+        android:src="@drawable/app_logo" />
+
+    <LinearLayout
+        android:id="@+id/loginli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginUser"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/loginId"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/id"
+            android:textColorHint="#CDCDC1"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/loginline"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#D7D7D7"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/loginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColorHint="#CDCDC1"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/loginli"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector"
+        android:includeFontPadding="false"
+        android:text="@string/login"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/loginChangePw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/loginBtn"
+        android:layout_marginRight="15dp"
+        android:background="#00000000"
+        android:includeFontPadding="false"
+        android:text="@string/changepw"
+        android:textColor="#00AFEF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/loginMissps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        android:text="@string/misspassword"
+        android:textColor="#00AFEF"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/loginNewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        android:text="@string/newuser"
+        android:textColor="#00AFEF"
+        android:textSize="14sp" />
+
+</RelativeLayout>

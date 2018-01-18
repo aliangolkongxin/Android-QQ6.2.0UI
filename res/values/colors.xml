@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="line">#E0E0E0</color>
+    <color name="transparent">#00000000</color>
+    <color name="tab_select_color">#2bbfff</color>
+    <color name="tab_uncelect_color">#bab5bd</color>
+    <color name="status_color">#d0d0d0</color>
+    <color name="gray_black">#3C3C3C</color>
+    <color name="_white">#FBFBFF</color>
+    <color name="blue">#00AFEF</color>
+</resources>
